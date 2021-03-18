@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-image {
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .mainHeader {
+        color: white;
+        font-size: 64px;
+        padding: 20px;
+        text-align: center;
+        font-family: fantasy;
+    }
+
+    .pianoFormer {
+        height: 250px;
+        margin: 150px;
+        margin-top: 150px;
+        margin-left: 200px;
+
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .key {
+        width: 50px;
+        float: left;
+        margin: 6px;
+
+    }
+
+    .white-key {
+        border-radius: 2px;
+        border: 2px solid rgb(63, 59, 59);
+        width: 50px;
+        height: 230px;
+        background-color: white;
+        padding: 5px;
+        float: left;
+        box-shadow: 0.0px 10px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .black-key {
+        position: relative;
+        border: 2px solid rgb(63, 59, 59);
+        width: 35px;
+        height: 130px;
+        background-color: black;
+        float: left;
+        left: -20px;
+        bottom: 242px;
+        box-shadow: 0.0px 10px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    playing {}
+</style>
+
+<body class="background-image">
+
+    <div class="mainHeader">
+        Virtual Piano
+    </div>
+
+
+    <div class="pianoFormer">
+        <ul>
+            <li class="key">
+                <span data-key="81" class="white-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="87" class="white-key"></span>
+                <span data-key="69" class="black-key" style="position: relative;"></span>
+            </li>
+            <li class="key">
+                <span data-key="82" class="white-key"></span>
+                <span data-key="84" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="89" class="white-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="85" class="white-key"></span>
+                <span data-key="73" class="black-key" style="position: relative;"></span>
+            </li>
+            <li class="key">
+                <span data-key="79" class="white-key"></span>
+                <span data-key="80" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="65" class="white-key"></span>
+                <span data-key="83" class="black-key"></span>
+            </li> 
+            <li class="key">
+                <span data-key="68" class="white-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="70" class="white-key"></span>
+                <span data-key="71" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="72" class="white-key"></span>
+                <span data-key="74" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="76" class="white-key"></span>
+            </li>`''
+            <li class="key">
+                <span data-key="90" class="white-key"></span>
+                <span data-key="88" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="67" class="white-key"></span>
+                <span data-key="86" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="66" class="white-key"></span>
+                <span data-key="78" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="77" class="white-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="188" class="white-key"></span>
+                <span data-key="190" class="black-key"></span>
+            </li>
+            <li class="key">
+                <span data-key="191" class="white-key"></span>
+                <span class="black-key"></span>
+            </li>
+            <li class="key">
+                <span class="white-key"></span>
+            </li>
+            <li class="key">
+                <span class="white-key"></span>
+                <span class="black-key"></span>
+            </li>
+            <li class="key">
+                <span class="white-key"></span>
+                <span class="black-key"></span>
+            </li>
+            <li class="key">
+                <span class="white-key"></span>
+                <span class="black-key"></span>
+            </li>
+        </ul>
+    </div>
+
+    < data-key="81" class="key">
+        <audio data-key="87" src="medias/220-A.mp3"></audio>
+        <audio data-key="69" src="medias/246-B.mp3"></audio>
+        <audio data-key="82" src="medias/261-C.mp3"></audio>
+        <audio data-key="84" src="medias/277-C-sharp.mp3"></audio>
+        <audio data-key="89" src="medias/293-D.mp3"></audio>
+        <audio data-key="85" src="medias/311-D-sharp.mp3"></audio>
+        <audio data-key="73" src="medias/329-E.mp3"></audio>
+        <audio data-key="79" src="medias/329-E.mp3"></audio>
+        <audio data-key="80" src="medias/349-F.mp3"></audio>
+        <audio data-key="65" src="medias/369F-sharp.mp3"></audio>
+        <audio data-key="83" src="medias/391-G.mp3"></audio>
+        <audio data-key="68" src="medias/415-G-sharp.mp3"></audio>
+        <audio data-key="70" src="medias/440-A.mp3"></audio>
+        <audio data-key="71" src="medias/466-A-sharp.mp3"></audio>
+        <audio data-key="72" src="medias/495-B.mp3"></audio>
+        <audio data-key="74" src="medias/523-C.mp3"></audio>
+        <audio data-key="76" src="medias/545-C-sharp.mp3"></audio>
+        <audio data-key="90" src="medias/587-D.mp3"></audio>
+        <audio data-key="88" src="medias/622-D-sharp.mp3"></audio>
+        <audio data-key="67" src="medias/659-E.mp3"></audio>
+        <audio data-key="86" src="medias/698-F-sharp.mp3"></audio>
+        <audio data-key="66" src="medias/783-G.mp3"></audio>
+        <audio data-key="78" src="medias/830-G-sharp.mp3"></audio>
+        <audio data-key="77" src="medias/880-A.mp3"></audio>
+        <audio data-key="188" src="medias/932-A-sharp.mp3"></audio>
+        <audio data-key="190" src="medias/987-B.mp3"></audio>
+        <audio data-key="191" src="medias/1046-C.mp3"></audio>
+
+
+
+
+
+
+</body>
+
+<script>
+
+
+
+</script>
+
+
+</html>
