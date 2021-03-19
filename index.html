@@ -5,92 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .background-image {
-        background-image: url('images/background.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    .mainHeader {
-        color: white;
-        font-size: 64px;
-        padding: 20px;
-        text-align: center;
-        font-family: fantasy;
-    }
-
-    .pianoFormer {
-        height: 250px;
-        margin: 150px;
-        margin-top: 150px;
-        margin-left: 200px;
-
-    }
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .key {
-        width: 50px;
-        float: left;
-        margin: 6px;
-
-    }
-
-    .white-key {
-        border-radius: 2px;
-        border: 2px solid rgb(63, 59, 59);
-        width: 50px;
-        height: 230px;
-        background-color: white;
-        padding: 5px;
-        float: left;
-        box-shadow: 0.0px 10px 1px rgba(0, 0, 0, 0.4);
-    }
-
-    .black-key {
-        position: relative;
-        border: 2px solid rgb(63, 59, 59);
-        width: 35px;
-        height: 130px;
-        background-color: black;
-        float: left;
-        left: -20px;
-        bottom: 242px;
-        box-shadow: 0.0px 10px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .playing {
-        color: antiquewhite;
-        box-shadow: 0 0 0;
-
-    }
+   
 </style>
 
 <body class="background-image">
-
     <div class="mainHeader">
         Virtual Piano
     </div>
-
 
     <div class="pianoFormer">
         <ul>
@@ -204,28 +132,9 @@
     <audio data-key="190" src="medias/987-B.mp3"></audio>
     <audio data-key="191" src="medias/1046-C.mp3"></audio>
 
-
-
-
-
-
 </body>
 
-<script>
-    window.addEventListener('keydown', function (e) {
-        const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`)
-
-        if (!audio) return  // stop function for empty character
-        console.log(audio);
-        audio.currentTime = 0 // sound repeatedly
-        audio.play()
-
-    }
-
-    )
-
-
-</script>
+<script src="app.js"></script>
 
 
 </html>

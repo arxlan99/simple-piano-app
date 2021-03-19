@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.mainHeader {
+    color: white;
+    font-size: 64px;
+    padding: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.pianoFormer {
+    height: 250px;
+    margin: 150px;
+    margin-top: 150px;
+    margin-left: 200px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.key {
+    width: 50px;
+    float: left;
+    margin: 6px;
+
+}
+
+.white-key {
+    border-radius: 2px;
+    border: 2px solid rgb(63, 59, 59);
+    width: 50px;
+    height: 230px;
+    background-color: white;
+    padding: 5px;
+    float: left;
+    box-shadow: 0.0px 10px 1px rgba(0, 0, 0, 0.4);
+    
+}
+
+.black-key {
+    position: relative;
+    border: 2px solid rgb(63, 59, 59);
+    width: 35px;
+    height: 130px;
+    background-color: black;
+    float: left;
+    left: -20px;
+    bottom: 242px;
+    box-shadow: 0.0px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.playing {
+    transition: 0.5s;
+    color: antiquewhite;
+    box-shadow: 0 0 0;
+    transform: scale(1.01);
+}
